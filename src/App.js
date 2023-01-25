@@ -7,7 +7,10 @@ import SideBar from "./scenes/global/SideBar";
 import Team from "./scenes/team";
 import Contacts from "./scenes/contacts";
 import Invoices from "./scenes/invoices";
+import Bar from "./scenes/bar";
 import Form from "./scenes/form";
+import Line from "./scenes/line";
+import Pie from "./scenes/pie";
 import FAQ from "./scenes/faq";
 import Calendar from "./scenes/calendar";
 
@@ -28,6 +31,9 @@ function App() {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />
                 <Route path="/form" element={<Form />} />
+                <Route path="/bar" element={<Bar />} />
+                <Route path="/pie" element={<Pie />} />
+                <Route path="/line" element={<Line />} />
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/calendar" element={<Calendar />} />
               </Routes>
