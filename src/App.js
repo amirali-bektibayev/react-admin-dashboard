@@ -1,6 +1,7 @@
 import { ColorModeContext, useMode } from "./theme";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { Routes, Route } from "react-router-dom";
+import Dashboard from "./scenes/dashboard";
 import TopBar from "./scenes/global/TopBar";
 import SideBar from "./scenes/global/SideBar";
 import Team from "./scenes/team";
@@ -22,7 +23,7 @@ function App() {
             <div className="content">
               <TopBar />
               <Routes>
-                <Route path="/" />
+                <Route path="/" element={<Dashboard />} />
                 <Route path="/team" element={<Team />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/invoices" element={<Invoices />} />
