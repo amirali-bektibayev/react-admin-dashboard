@@ -15,7 +15,7 @@ function App() {
   const [theme, colorMode] = useMode();
 
   return (
-    <ColorModeContext value={colorMode}>
+    <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>
         <CssBaseline>
           <div className="app">
@@ -35,7 +35,7 @@ function App() {
           </div>
         </CssBaseline>
       </ThemeProvider>
-    </ColorModeContext>
+    </ColorModeContext.Provider>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import { Box, Button, TextField } from "@mui/material";
 import * as yup from "yup";
 import useMediaQuery from "@mui/material/useMediaQuery";
